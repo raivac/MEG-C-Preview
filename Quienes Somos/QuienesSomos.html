@@ -169,18 +169,17 @@
             if (aside.getAttribute("class") == "") {
                 aside.setAttribute("class", "click");
             }
-            else { 
-                aside.setAttribute("class", ""); 
+            else {
+                aside.setAttribute("class", "");
             }
         })
         main.addEventListener("click", () => {
             aside.setAttribute("class", "");
         })
         window.addEventListener("keydown", (ev) => {
-            if(ev.key === "Escape"){
+            if (ev.key === "Escape") {
                 aside.setAttribute("class", "");
             }
-            
         })
     </script>
 </body>
