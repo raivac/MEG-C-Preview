@@ -22,6 +22,11 @@ body {
     font-size: 3vw;
 }
 
+header div#barra{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 header div#logo img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,10 +61,42 @@ i#yt {
     color: red;
 }
 
-/*menu de hamburguesa por hacer*/
+/*menu de hamburguesa por hacer esto son pruebas que estaba haciendo con un aside*/
+/***********************************/
 nav {
     display: none;
 }
+aside{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: 2px solid #A57D17;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+aside:active{
+    background-color:black ;
+    width: 15rem;
+    height: 15rem;
+}
+
+aside ul li a{
+    color: rgba(255, 255, 255, 0);
+   
+}
+aside ul li{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+aside:active ul li a{
+    transition: all 0.5s ease;
+    color: #A57D17;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+
+/***********************************/
 
 main {
     display: grid;
@@ -160,6 +197,9 @@ footer div#redesFooter {
         width: 50%;
         height: 300px;
     }
+    aside{
+        display: none;
+    }
 
     nav {
         display: block;
@@ -204,7 +244,7 @@ footer div#redesFooter {
         grid-area: d4;
         display: block;
         margin: 0 auto;
-        margin-top: 4rem;
+        margin-top: 5rem;
         width: 80%;
     }
 
