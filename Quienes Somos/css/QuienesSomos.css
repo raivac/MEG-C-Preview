@@ -276,6 +276,9 @@ footer div#redesFooter {
         justify-content: space-evenly;
         padding: 0.5em;
     }
+    footer div#redesFooter i:hover{
+        font-size:1.1rem;
+    }
 
     footer p {
         font-size: 12px;
