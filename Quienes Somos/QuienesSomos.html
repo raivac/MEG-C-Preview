@@ -166,7 +166,7 @@
         let main = document.getElementsByTagName("main")[0];
 
         aside.addEventListener("click", () => {
-            if (aside.getAttribute("class") === "") {
+            if (aside.getAttribute("class") == "") {
                 aside.setAttribute("class", "click");
             }
             else { 
@@ -175,6 +175,12 @@
         })
         main.addEventListener("click", () => {
             aside.setAttribute("class", "");
+        })
+        window.addEventListener("keydown", (ev) => {
+            if(ev.key === "Escape"){
+                aside.setAttribute("class", "");
+            }
+            
         })
     </script>
 </body>
