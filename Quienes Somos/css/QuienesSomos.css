@@ -75,7 +75,7 @@ aside{
     border-radius: 5px;
     margin: 0.75rem;
 }
-aside:active{
+aside:hover{
     background-color:black ;
     width: 15rem;
     height: 15rem;
@@ -89,7 +89,7 @@ aside ul li{
     margin-top: 1.5rem;
     text-align: center;
 }
-aside:active ul li a{
+aside:hover ul li a{
     transition: all 0.5s ease;
     color: #A57D17;
     font-size: 1.2em;
