@@ -79,6 +79,18 @@ aside{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+aside select#idioma{
+    display: none;
+}
+aside.click select#idioma{
+    display: block;
+    margin: 0.75rem auto;
+    background-color: #A57D17;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
 aside.click{
     background-color:black ;
     background-image: none;

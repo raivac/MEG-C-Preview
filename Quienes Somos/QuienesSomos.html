@@ -34,14 +34,16 @@
                             class="fa-brands fa-youtube"></i></a>
                 </li>
             </div>
-
-
             <aside id="aside" class="">
                 <ul>
                     <li><a href="./QuienesSomos.html">¿Quienes Somos?</a></li>
                     <li><a href="#">Proximos conciertos</a></li>
                     <li><a href="#">¿Te gusta cantar?</a></li>
                     <li><a href="#">Contacta con nosotros</a></li>
+                    <select name="idioma" id="idioma">Idioma
+                    <option value="esp">Español</option>
+                    <option value="eng">English</option>
+                    <option value="val">Valencià</option></select>
                 </ul>
 
             </aside>
@@ -164,14 +166,14 @@
 
         let aside = document.getElementById("aside");
         let main = document.getElementsByTagName("main")[0];
-
+        let select = document.getElementById("idioma");
         aside.addEventListener("click", () => {
             if (aside.getAttribute("class") == "") {
                 aside.setAttribute("class", "click");
             }
-            else {
-                aside.setAttribute("class", "");
-            }
+            // else {
+            //     aside.setAttribute("class", "");
+            // }
         })
         main.addEventListener("click", () => {
             aside.setAttribute("class", "");
@@ -180,6 +182,9 @@
             if (ev.key === "Escape") {
                 aside.setAttribute("class", "");
             }
+        })
+        select.addEventListener("click",()=>{
+            aside.setAttribute("class", "click");
         })
     </script>
 </body>
