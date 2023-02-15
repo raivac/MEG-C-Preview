@@ -18,7 +18,7 @@
         select.addEventListener("click", () => {
             aside.setAttribute("class", "click");
         })
-
+    
 
         window.addEventListener("load", () => {
             Swal.fire({
@@ -29,7 +29,8 @@
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Si',
-                cancelButtonText: 'No'
+                cancelButtonText: 'No',
+                footer: '<a href="">Sobre nuestra política</a>'
             }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire(
