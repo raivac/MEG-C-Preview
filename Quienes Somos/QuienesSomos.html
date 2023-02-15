@@ -9,6 +9,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/QuienesSomos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>¿Quienes Somos?</title>
 </head>
 
@@ -169,29 +170,7 @@
     </footer>
 
 
-
-    <script>
-
-        let aside = document.getElementById("aside");
-        let main = document.getElementsByTagName("main")[0];
-        let select = document.getElementById("idioma");
-        aside.addEventListener("click", () => {
-            if (aside.getAttribute("class") == "") {
-                aside.setAttribute("class", "click");
-            }
-        })
-        main.addEventListener("click", () => {
-            aside.setAttribute("class", "");
-        })
-        window.addEventListener("keydown", (ev) => {
-            if (ev.key === "Escape") {
-                aside.setAttribute("class", "");
-            }
-        })
-        select.addEventListener("click", () => {
-            aside.setAttribute("class", "click");
-        })
-    </script>
+    <script src="./js/QuienesSomos.js"></script>
 </body>
 
 </html>
