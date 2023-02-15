@@ -22,11 +22,12 @@ body {
     font-size: 3vw;
 }
 
-header div#barra{
+header div#barra {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+
 header div#logo img {
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +67,8 @@ i#yt {
 nav {
     display: none;
 }
-aside{
+
+aside {
     padding-top: 1rem;
     width: 50px;
     height: 50px;
@@ -80,38 +82,45 @@ aside{
     background-repeat: no-repeat;
 }
 
-aside select#idioma{
+aside select#idioma {
     display: none;
 }
-aside.click select#idioma{
+
+aside.click select#idioma {
     display: block;
     margin: 0.75rem auto;
     background-color: #A57D17;
     padding: 0.5rem;
     font-weight: bold;
+    border-radius: 0.2rem;
 }
 
-aside.click{
-    background-color:black ;
+aside.click {
+    background-color: black;
     background-image: none;
     width: 100%;
     height: 100%;
 }
 
-aside ul li a{
+aside ul li a {
     color: rgba(255, 255, 255, 0);
-   
+
 }
-aside ul li{
+
+aside ul li {
     margin: 2rem 0;
     text-align: center;
 }
-aside.click ul li a{
+
+aside.click ul li a {
     transition: all 0.5s ease;
     color: #A57D17;
     font-size: 1.2em;
     font-weight: bold;
-    
+}
+
+div#lang select#idiomaPC {
+    display: none;
 }
 
 /***********************************/
@@ -215,8 +224,23 @@ footer div#redesFooter {
         width: 50%;
         height: 300px;
     }
-    aside{
+
+    aside {
         display: none;
+    }
+
+    div#lang{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    div#lang select#idiomaPC {
+        display: block;
+        margin: 0.5rem;
+        background-color: #A57D17;
+        padding: 0.2rem;
+        font-weight: bold;
+        border-radius: 0.1rem;
     }
 
     nav {
@@ -254,7 +278,8 @@ footer div#redesFooter {
             "d2 d1"
             "d3 d4";
     }
-    main h1{
+
+    main h1 {
         font-size: 1.75rem;
     }
 
@@ -288,8 +313,9 @@ footer div#redesFooter {
         justify-content: space-evenly;
         padding: 0.5em;
     }
-    footer div#redesFooter i:hover{
-        font-size:1.1rem;
+
+    footer div#redesFooter i:hover {
+        font-size: 1.1rem;
     }
 
     footer p {

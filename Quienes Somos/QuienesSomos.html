@@ -40,15 +40,23 @@
                     <li><a href="#">Proximos conciertos</a></li>
                     <li><a href="#">¿Te gusta cantar?</a></li>
                     <li><a href="#">Contacta con nosotros</a></li>
-                    <select name="idioma" id="idioma">Idioma
-                    <option value="esp">Español</option>
-                    <option value="eng">English</option>
-                    <option value="val">Valencià</option></select>
+                    <select name="idioma" id="idioma">
+                        <option value="esp">Español</option>
+                        <option value="eng">English</option>
+                        <option value="val">Valencià</option>
+                    </select>
                 </ul>
-
             </aside>
         </div>
     </header>
+
+    <div id="lang">
+        <select name="idiomaPC" id="idiomaPC">
+            <option value="esp">Español</option>
+            <option value="eng">English</option>
+            <option value="val">Valencià</option>
+        </select>
+    </div>
 
     <nav>
         <ul>
@@ -171,9 +179,6 @@
             if (aside.getAttribute("class") == "") {
                 aside.setAttribute("class", "click");
             }
-            // else {
-            //     aside.setAttribute("class", "");
-            // }
         })
         main.addEventListener("click", () => {
             aside.setAttribute("class", "");
@@ -183,7 +188,7 @@
                 aside.setAttribute("class", "");
             }
         })
-        select.addEventListener("click",()=>{
+        select.addEventListener("click", () => {
             aside.setAttribute("class", "click");
         })
     </script>
