@@ -1,0 +1,340 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400&display=swap');
+
+
+
+/*INICIALIZACIONES*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/******************* MOVIL *******************/
+:root {
+    background-color: #3D3D3D;
+    color: #A57D17;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 3vw;
+}
+
+header div#barra {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+header div#logo img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 10rem;
+}
+
+header div#redes {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header div#redes li {
+    margin: 0.75rem;
+
+}
+
+header div#redes li i {
+    font-size: 1.5rem;
+}
+
+i#ig {
+    color: deeppink;
+}
+
+i#fb {
+    color: rgb(13, 123, 197);
+}
+
+i#yt {
+    color: red;
+}
+
+
+/*menu de hamburguesa por hacer, esto son pruebas que estaba haciendo con un aside*/
+/***********************************/
+nav {
+    display: none;
+}
+
+aside {
+    padding-top: 1rem;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid #A57D17;
+    border-radius: 5px;
+    margin: 0.75rem;
+    background-image: url("/img/burg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+aside select#idioma {
+    display: none;
+}
+
+aside.click select#idioma {
+    display: block;
+    margin: 0.75rem auto;
+    background-color: #A57D17;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    border: 2px solid black;
+}
+
+aside.click {
+    background-color: black;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+}
+
+aside ul li a {
+    color: rgba(255, 255, 255, 0);
+
+}
+
+aside ul li {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+aside.click ul li a {
+    transition: all 0.5s ease;
+    color: #A57D17;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+div#lang select#idiomaPC {
+    display: none;
+}
+
+/*alerta politca privacidad*/
+.swal2-popup {
+    font-size: 12pt;
+}
+
+/***********************************/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "h1"
+        "d1"
+        "d2"
+        "d3";
+}
+
+main>h1 {
+    grid-area: h1;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+    letter-spacing: 0.15em;
+}
+
+main div#carrousel {
+    grid-area: d1;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main div#video {
+    grid-area: d4;
+    display: none;
+}
+
+main div#carrousel * {
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid white;
+}
+
+main div#presentacion {
+    grid-area: d2;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+main div#historia {
+    grid-area: d3;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+main div p {
+    letter-spacing: 0.1em;
+    padding: 1.5em;
+}
+
+main div h2 {
+    margin: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    padding: 1rem;
+}
+
+footer div#redesFooter {
+    display: none;
+}
+
+
+/********************************TABLET / PC*******************************/
+
+@media (min-width: 768px) {
+
+    :root {
+        font-size: 3.2vw;
+    }
+
+    header div#redes {
+        display: none;
+    }
+
+    header {
+        background-color: black;
+    }
+
+    header div#logo {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header div#logo img {
+        width: 50%;
+        height: 300px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    div#lang {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    div#lang select#idiomaPC {
+        display: block;
+        margin: 0.5rem;
+        background-color: #A57D17;
+        padding: 0.2rem;
+        font-weight: bold;
+        border-radius: 0.1rem;
+        border: 2px solid black;
+    }
+
+    nav {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav ul li a {
+        background-color: black;
+        color: #A57D17;
+        padding: 0.5rem;
+        border: 2px solid #A57D17;
+        border-radius: 10px;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        background-color: #644D11;
+        color: black;
+        border: 2px solid black;
+        transition: all 0.3s ease;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "h1 h1"
+            "d2 d1"
+            "d3 d4";
+    }
+
+    main h1 {
+        font-size: 1.75rem;
+    }
+
+    main div#video {
+        grid-area: d4;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5rem;
+        width: 80%;
+    }
+
+    main div#video iframe {
+        border-radius: 0.5rem;
+        border: 1.5px solid white;
+    }
+
+    main div p {
+        letter-spacing: 0.1em;
+        font-size: 20px;
+    }
+
+    main div h2 {
+        margin: 0.1rem;
+        font-weight: bold;
+        letter-spacing: 0.15em;
+        font-size: 1rem;
+    }
+
+    footer div#redesFooter {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0.5em;
+    }
+
+    footer div#redesFooter i:hover {
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 12px;
+        padding: 1em;
+    }
+
+    /*alerta politca privacidad*/
+    .swal2-popup {
+        font-size: 14pt;
+    }
+}
