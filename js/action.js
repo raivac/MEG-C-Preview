@@ -43,9 +43,9 @@ if (localStorage.politica <= 0 || localStorage.politica == undefined || localSto
             )
             localStorage.setItem("politica", 1);
         }
-        else{
-            window.close();
-        }
+        // else{
+        //     window.close();
+        // }
     })
 }
 
