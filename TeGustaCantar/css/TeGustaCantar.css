@@ -1,0 +1,25 @@
+
+/**************** MOVIL *******************/
+
+
+
+main>h1 {
+    grid-area: h1;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+    letter-spacing: 0.15em;
+}
+
+
+
+/********************************TABLET / PC*******************************/
+
+@media (min-width: 768px) {
+
+   
+    main h1 {
+        font-size: 1.75rem;
+    }
+
+}

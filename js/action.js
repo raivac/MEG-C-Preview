@@ -33,7 +33,7 @@ if (localStorage.politica <= 0 || localStorage.politica == undefined || localSto
         confirmButtonText: 'Si',
         cancelButtonText: 'No',
         width: '60%',
-        footer: '<a href="/PolíticaPrivacidad/PoliticaPrivacidad.html">Sobre nuestra política</a>'
+        footer: '<a href="../PolíticaPrivacidad/PoliticaPrivacidad.html">Sobre nuestra política</a>'
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire(
