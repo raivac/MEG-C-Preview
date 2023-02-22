@@ -10,30 +10,8 @@ main{
                          "d2";
 }
 
-
-main>h1 {
-    grid-area: h1;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 3rem;
-    letter-spacing: 0.15em;
-    font-size: 2rem;
-}
-
 main div{
     text-align: center;
-}
-
-main div p {
-    letter-spacing: 0.1em;
-    padding: 1.5em;
-}
-
-main div h2 {
-    margin: 1rem;
-    font-weight: bold;
-    letter-spacing: 0.15em;
-    font-size: 1.5rem;
 }
 
 main div#d1{
@@ -69,26 +47,10 @@ main div#d3 img{
                              "d1 d3"
                              "d2 d3";
     }
-    main h1 {
-        font-size: 1.75rem;
-    }
 
     main div#d1{
         margin-top: 3rem;
     }
-
-    main div p {
-        letter-spacing: 0.1em;
-        font-size: 20px;
-    }
-
-    main div h2 {
-        margin: 0.1rem;
-        font-weight: bold;
-        letter-spacing: 0.15em;
-        font-size: 1rem;
-    }
-
 
     main div#d3 img{
         height: 800px;

@@ -14,8 +14,8 @@
 
 /*************************************** MOVIL *************************************/
 :root {
-    background-color: #3D3D3D;
-    color: #A57D17;
+    background-color: #2e2e2e;
+    color: #c0911b;
 }
 
 body {
@@ -135,6 +135,31 @@ div#lang select#idiomaPC {
     font-size: 12pt !important;
 }
 
+/***********************H1 H2 P**************************/
+
+main>h1 {
+    grid-area: h1;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+    letter-spacing: 0.15em;
+    font-size: 2rem;
+    text-decoration: underline;
+    padding: 1em;
+}
+
+main div p {
+    letter-spacing: 0.1em;
+    padding: 1.5em;
+}
+
+main div h2 {
+    margin: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    font-size: 1.5rem;
+}
+
 /********************* FOOTER ********************/
 
 footer {
@@ -165,8 +190,7 @@ footer div#redesFooter {
     }
 
     /*********************** HEADER ************************/
-
-
+    
     header div#redes {
         display: none;
     }
@@ -254,6 +278,23 @@ footer div#redesFooter {
     /*alerta politca privacidad*/
     .swal2-popup {
         font-size: 14pt !important;
+    }
+
+    /****************** H1 H2  P *********************/
+    main h1 {
+        font-size: 1.2rem;
+    }
+
+    main div p {
+        letter-spacing: 0.1em;
+        font-size: 0.5rem;
+    }
+
+    main div h2 {
+        margin: 0.1rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        font-size: 0.7rem;
     }
 
 }

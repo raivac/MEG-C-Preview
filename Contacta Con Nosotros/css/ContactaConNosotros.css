@@ -8,32 +8,9 @@ main {
         "d2"
         "d3";
 }
-
-
-main>h1 {
-    grid-area: h1;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 3rem;
-    letter-spacing: 0.15em;
-    font-size: 2rem;
-}
-
 main div {
     text-align: center;
     margin-top: 3rem;
-}
-
-main div p {
-    letter-spacing: 0.1em;
-    padding: 1.5em;
-}
-
-main div h2{
-    margin: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 0.15em;
-    font-size: 1.5rem;
 }
 
 main div#d1 {
@@ -54,15 +31,32 @@ main div#d2 iframe{
 
 main div#d3 {
     grid-area: d3;
+    margin-top: 2rem;
+}
+main div#d3 form{
+    display: flex;
+    flex-direction: column;
 }
 
-main div#d3 form *{
+
+main div#d3 form *:not(button){
     letter-spacing: 0.1em;
-    margin-top: 1rem;
+    margin: 0.5rem auto;
     font-weight: bold;
+    width: 80%;
+}
+
+main div#d3 form input{
+    padding: 0.5rem;
 }
 
 main div#d3 form button{
+    margin: 0 auto;
+    width: 20%;
+}
+
+main div#d3 form button{
+    margin-top: 1rem;
     background-color: black;
     color: #A57D17;
     padding: 0.5rem;
@@ -93,25 +87,32 @@ main div#d3 form button:hover {
             "d1 d3"
             "d2 d3";
     }
-
-    main h1 {
-        font-size: 1.75rem;
-    }
-
+    
     main div#d1 {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
-    main div p {
-        letter-spacing: 0.1em;
+     main div#d3 *:not(h2):not(button){
+        text-align: left;
+    } 
+
+    main div#d3 h2{
+        margin-bottom: 1rem;
+    }
+
+    main div#d3 form label{
+        font-size: 0.5em;
+        margin: 0 auto;
+    }
+
+    main div#d3 form button{
+        padding: 0.5em;
+        font-size: 0.5em;
+    }
+
+    main div#d3 form input{
+        padding: 0.5em;
         font-size: 20px;
     }
-
-    main div h2 {
-        margin: 0.1rem;
-        font-weight: bold;
-        letter-spacing: 0.15em;
-        font-size: 1rem;
-    }
-
+    
 }
