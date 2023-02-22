@@ -17,6 +17,7 @@ main>h1 {
     text-align: center;
     margin-top: 3rem;
     letter-spacing: 0.15em;
+    font-size: 2rem;
 }
 
 main div#carrousel {
@@ -67,6 +68,7 @@ main div h2 {
     margin-top: 3rem;
     font-weight: bold;
     letter-spacing: 0.15em;
+    font-size: 1.5rem;
 }
 
 /********************************TABLET / PC*******************************/
