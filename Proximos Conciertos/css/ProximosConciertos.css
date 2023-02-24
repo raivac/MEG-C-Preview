@@ -51,6 +51,9 @@ main div#info{
     text-align: center;
 }
 
+main div h2{
+    margin-top: 2rem;
+}
 /********************************TABLET / PC*******************************/
 
 @media (min-width: 768px) {

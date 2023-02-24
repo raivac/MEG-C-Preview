@@ -19,7 +19,11 @@ select.addEventListener("click", () => {
     aside.setAttribute("class", "click");
 })
 
-let politica = 0;
+
+
+// /*para resetearlo y volverlo a ver*/
+// localStorage.setItem("politica", 0);
+
 
 if (localStorage.politica <= 0 || localStorage.politica == undefined || localStorage.politica == NaN) {
 
@@ -43,12 +47,8 @@ if (localStorage.politica <= 0 || localStorage.politica == undefined || localSto
             )
             localStorage.setItem("politica", 1);
         }
-        // else{
-        //     window.close();
-        // }
+        
     })
 }
 
-/*para resetearlo y volverlo a ver*/
-// localStorage.setItem("politica", -1);
-// console.log(localStorage.politica);
+

@@ -39,6 +39,10 @@ main div#historia {
     margin-top: 10vw;
 }
 
+div#carrousel *{
+    height: 350px;
+}
+
 /********************************TABLET / PC*******************************/
 
 @media (min-width: 768px) {
@@ -62,6 +66,10 @@ main div#historia {
     main div#video iframe {
         border-radius: 0.5rem;
         border: 1.5px solid white;
+    }
+
+    main div iframe, div#carrousel *{
+        height: 500px;
     }
 
 }
